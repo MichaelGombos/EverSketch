@@ -74,6 +74,7 @@ footer{
     background-size: cover;
     color:white;
 }
+<<<<<<< HEAD
 #hero h1{
     margin-bottom:75px;
 }
@@ -81,6 +82,17 @@ footer{
     margin-bottom:55px;
 }
 
+=======
+#hero{
+    margin-bottom:75px;
+}
+.page-content{
+    margin-bottom:55px;
+}
+#hero .motif-square img{
+    display:none;
+}
+>>>>>>> f553d89 (Added tablet to laptop styles)
 .post{
     display:flex;
     flex-direction:column;
@@ -155,3 +167,46 @@ footer{
     flex-direction:column;
 }
 
+<<<<<<< HEAD
+=======
+/*tablet to laptop styles*/
+@media only screen and (min-width : 695px){
+    #hero .motif-square{
+        position:relative;
+        height:fit-content;
+    }
+    #hero .motif-square img{
+        display:block;
+        border:12px solid var(--primary-color);
+    }
+    #hero .motif-square .backdrop{
+        height: 289px;
+        width: 289px;
+        position: absolute;
+        background-color: var(--dark-color);
+        bottom: 13px;
+        right: -15px;
+        z-index: -1;
+    }
+    #hero{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header,footer{
+        padding:100px 11px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    header nav, footer nav{
+        display:flex;
+        flex-direction:row;
+    }
+        header nav a, footer nav a{
+    margin-left:15px;
+        }
+}
+/* laptop and above styles
+>>>>>>> f553d89 (Added tablet to laptop styles)
