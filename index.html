@@ -7,14 +7,65 @@
   <meta name="author" content="Michael Gombos">
   <meta name="description" content="Static html site for future wordpress theme">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <link href="style.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <h1>HELOOO NEW YORK CITY!!</h1>
-
+  <header>
+          <a href="#" > <img id="logo" src="./assets/template-logo/logo-primary.svg"></a>
+          <nav>
+              <a href="#" >All</a>
+              <a href="#" >Art</a>
+              <a href="#" >Programming</a>
+              <a href="#" >Book Reviews</a>
+          </nav>
+  </header>
+  
+  <section id="hero">
+      <h1 class="h1">EVER<br/><span class="text-primary">ETCH</span></h1>
+      <h2 class="h2 w-normal">Woah <span class="text-primary">:D</span> didn't see you there!</h2>
+      <p>Just kidding, <strong>I totally did,</strong> with google analytics. I will mainly cover drawing progress here , but I also post book reviews, and developer logs for web development. You can check out my posts by tag <a href="#">(?)</a>, or head to the <a href="#">all posts</a> page.</p>
+  </section>
+     
+    <section id="posts">
+        <div class="post">
+            <h3 class="h3"><span class="text-primary">Dev Log</span> - Wordpress Theme Development</h3>
+            <div class="h5 time text-light"> <img src="./assets/icons/time.svg" class="row"><p>August 8, 2022 at 3:33pm PT</p></div>
+            
+            <p>Creating a blog has been on my mind ever since I picked..</p>
+            <div class="long-button">
+                  <div class="button-top"></div>
+                  <a class=" button"href="#">Continue Reading</a>
+            </div>
+        </div>
+        <div class="post">
+            <h3 class="h3"><span class="text-primary">ART Practice</span> - Draw a box Ex1. - Ex12</h3>
+            <div class="h5 time text-light"> <img src="./assets/icons/time.svg" class="row"><p>August 8, 2022 at 3:33pm PT</p></div>
+            
+            <p>This is actually noy my first rodeo when it comes to draw a..</p>
+            <img class="preview-image" src="./assets/template-images/post-previews/art-practice.png">
+            <div class="long-button">
+                  <div class="button-top"></div>
+                  <a class=" button"href="#">Continue Reading</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+          <a href="#" > <img id="logo" src="./assets/template-logo/logo-white.svg"></a>
+          <nav>
+              <a href="#" >All</a>
+              <a href="#" >Art</a>
+              <a href="#" >Programming</a>
+              <a href="#" >Book Reviews</a>
+          </nav>
+    </footer>
   <script src="magic.js"></script>
 </body>
 

@@ -1,3 +1,157 @@
-body{
-    color:Red;
+html{
+    /*brings base rem to 10px*/
+    --primary-color:#E24A08;
+    --primary-color-rgb:226, 74, 8;
+    --dark-color:#363636;
+    --light-color:#898989;
+    
+     font-size: 62.5%;
+     font-family: 'Open Sans', sans-serif;
+     color:var(--dark-color);
 }
+a{
+    color:inherit;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,p{
+    margin:0;
+}
+a.button{
+    background-color: var(--dark-color);
+    color:white;
+    border-bottom-right-radius:7px;
+    padding:8px 13px;
+    font-size:1.6rem;
+    
+    width:fit-content;
+}
+a.button:hover{
+    background-color: var(--primary-color);
+}
+
+.button-top{
+    width:100%;
+    height:9px;
+    background-color:var(--dark-color);
+    border-bottom-right-radius:4px;
+}
+.long-button{
+    display:flex;
+    flex-direction:column;
+}
+body{
+    font-size: 2.1rem;
+    margin:0;
+}
+header,footer{
+    display:flex;
+    flex-direction:column;   
+    align-items:center;
+        padding-top:40px;
+    padding-bottom:20px;
+}
+#logo{
+
+}
+header{
+
+}
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+nav a{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+section{
+    padding:0px 11px;
+}
+footer{
+    background:linear-gradient(-70deg, rgba(var(--primary-color-rgb), .6) 30%, rgba(var(--primary-color-rgb), .6) 30%), url("./assets/template-images/sections/footer-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+#hero h1{
+    margin-bottom:75px;
+}
+#hero{
+    margin-bottom:55px;
+}
+
+.post{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:50px;
+}
+.post > *{
+    margin-bottom:0.4rem;
+}
+.post .preview-image{
+    margin-bottom:0rem;
+}
+.post .time{
+    display:flex;
+}
+
+.time img{
+    margin-right:10px;
+}
+.w-normal{
+    font-weight:normal;
+}
+.w-bold{
+    font-weight:bold;
+}
+.h1{
+    font-size:20.2rem;
+    font-family: 'Bebas Neue', cursive;
+    margin:0;
+    line-height:.8;
+    
+    text-align:center;
+}
+
+.h2{
+    font-size:4.4rem;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.h3{
+    line-height:1.1;
+    font-size:2.5rem;
+}
+.h4{
+    font-size:2.1rem;
+}
+.h5{
+    font-size:1.6rem;;
+}
+
+.text-primary{
+    color:var(--primary-color);
+}
+.text-dark{
+    color:var(--dark-color);
+}
+.text-light{
+    color:var(--light-color);
+}
+.text-white{
+    color:white;
+}
+
+/*Display/positioning*/
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+}
+
